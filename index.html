@@ -6,29 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Цымбалюк Лариса Николаевна</title>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <link rel="stylesheet" href="assets/styles/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   </head>
   <body>
-    <header class="p-4 border-b-4 border-sky-500">
+    <header class="p-4 border-b-4 border-sky-500 bg-white z-10 sticky top-0">
       <nav class="flex max-w-screen-lg m-auto gap-8 justify-between text-xl items-center">
         <div class="flex gap-8">
           <a class="duration-100 border-b-4 border-transparent hover:border-sky-500" href="#bio">Биография</a>
           <a class="duration-100 border-b-4 border-transparent hover:border-sky-500" href="#photos">Фото</a>
           <a class="duration-100 border-b-4 border-transparent hover:border-sky-500" href="#achivements">Достижения</a>
           <a class="duration-100 border-b-4 border-transparent hover:border-sky-500" href="#activity">Деятельность</a>
-          <a class="duration-100 border-b-4 border-transparent hover:border-sky-500" href="#links">Ссылки</a>
+          <a class="duration-100 border-b-4 border-transparent hover:border-sky-500" href="#social-links">Ссылки</a>
           <a class="duration-100 border-b-4 border-transparent hover:border-sky-500" href="#files">Файлы</a>
           <a class="duration-100 border-b-4 border-transparent hover:border-sky-500"
              href="#sertificates">Сертификаты</a>
         </div>
+        <div class="flex gap-4">
         <a class="duration-100 border-b-4 border-transparent hover:border-sky-500"
-           href="mailto:larisa.tsimbalyuk@novsu.ru"><img class="w-10 h-10 drop-shadow" src="assets/images/mail.svg"
+           href="https://t.me/Lorictsym"><img class="w-10 h-10 drop-shadow" src="assets/images/telegram.svg"
+                                              alt="telegram"></a>
+        <a class="duration-100 border-b-4 border-transparent hover:border-sky-500"
+        href="mailto:larisa.tsimbalyuk@novsu.ru"><img class="w-10 h-10 drop-shadow" src="assets/images/mail.svg"
                                                          alt="mail"></a>
+        </div>
       </nav>
     </header>
 
-    <section id="bio" class="flex gap-8 p-8 items-center max-w-screen-lg m-auto">
+    <section id="bio" class="flex gap-8 p-8 items-center max-w-screen-lg scroll-mt-20 m-auto">
       <img class="w-80 rounded-xl" src="assets/images/photo.png" alt="photo">
       <article class="text-justify">
         <h1 class="text-5xl font-bold">Цымбалюк<br>Лариса Николаевна</h1>
@@ -50,35 +57,35 @@
       </article>
     </section>
 
-    <article id="photos" class="bg-gray-100">
+    <article id="photos" class="bg-gray-100 scroll-mt-16">
       <div class="max-w-screen-lg m-auto p-8">
         <h2 class="text-2xl font-bold">ФОТО</h2>
         <div class="my-1 h-1 w-16 bg-sky-500 rounded"></div>
         <div class="glide glide-photos mt-4">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/groups/1.png">
                 <img class="max-h-96" src="assets/images/groups/1.png" alt="1">
               </li>
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/groups/2.jpg">
                 <img class="max-h-96" src="assets/images/groups/2.jpg" alt="2">
               </li>
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/groups/3.jpg">
                 <img class="max-h-96" src="assets/images/groups/3.jpg" alt="3">
               </li>
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/groups/4.jpg">
                 <img class="max-h-96" src="assets/images/groups/4.jpg" alt="4">
               </li>
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/groups/5.jpg">
                 <img class="max-h-96" src="assets/images/groups/5.jpg" alt="5">
               </li>
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/groups/6.png">
               <img class="max-h-96" src="assets/images/groups/6.png" alt="6">
             </li>
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/groups/7.png">
                 <img class="max-h-96" src="assets/images/groups/7.png" alt="6">
               </li>
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/groups/8.jpg">
                 <img class="max-h-96" src="assets/images/groups/8.jpg" alt="6">
               </li>
             </ul>
@@ -91,7 +98,7 @@
       </div>
     </article>
 
-    <article id="achivements" class="max-w-screen-lg m-auto p-8">
+    <article id="achivements" class="max-w-screen-lg m-auto p-8 scroll-mt-16">
       <h2 class="text-2xl font-bold">ДОСТИЖЕНИЯ</h2>
       <div class="my-1 h-1 w-16 bg-sky-500 rounded"></div>
       <p class="mt-4">Разработаны дистанционные курсы (на сайте <a href="https://do.novsu.ru" class="text-sky-500">do.novsu.ru</a>),
@@ -117,46 +124,58 @@
         (Ворлдскиллс Россия)» по компетенции «Веб-дизайн и разработка».</p>
     </article>
 
-    <article id="activity" class="mt-6 bg-sky-600">
+    <article id="activity" class="mt-6 bg-sky-600 scroll-mt-16">
       <div class="max-w-screen-lg m-auto p-8">
         <h2 class="text-2xl font-bold text-white">ПРЕПОДАЮ</h2>
         <div class="my-1 h-1 w-16 bg-white rounded"></div>
         <ul class="grid grid-cols-3 mt-4 gap-4">
           <li class="relative flex flex-col justify-center text-center bg-white rounded-xl px-8 py-7 hover:shadow-lg hover:scale-105 duration-200">
+            <a href="https://do.novsu.ru/course/view.php?id=4037">
+              <span class="absolute top-2 left-4 text-gray-400 text-sm select-none">09.02.07</span>
+              <p>Основы разработки программного обеспечения</p>
+              <p class="text-sm text-gray-500">Информационные системы и программирование</p>
+            </a>
+          </li>
+          <li class="relative flex flex-col justify-center text-center bg-white rounded-xl px-8 py-7 hover:shadow-lg hover:scale-105 duration-200">
+            <a href="https://do.novsu.ru/course/view.php?id=287">
+              <span class="absolute top-2 left-4 text-gray-400 text-sm select-none">09.02.03</span>
+              <p>Технология разработки и защиты баз данных</p>
+              <p class="text-sm text-gray-500">Программирование в компьютерных системах</p>
+            </a>
+          </li>
+          <li class="relative flex flex-col justify-center text-center bg-white rounded-xl px-8 py-7 hover:shadow-lg hover:scale-105 duration-200">
+            <a href="https://do.novsu.ru/course/view.php?id=225">
+              <span class="absolute top-2 left-4 text-gray-400 text-sm select-none">09.02.01</span>
+              <p>Системы управления базами данных</p>
+              <p class="text-sm text-gray-500">Компьютерные системы и комплексы</p>
+            </a>
+          </li>
+          <li class="relative flex flex-col justify-center text-center bg-white rounded-xl px-8 py-7 hover:shadow-lg hover:scale-105 duration-200">
+            <a href="https://do.novsu.ru/course/view.php?id=267">
+              <span class="absolute top-2 left-4 text-gray-400 text-sm select-none">09.02.03</span>
+              <p>Операционные системы</p>
+              <p class="text-sm text-gray-500">Программирование в компьютерных системах</p>
+            </a>
+          </li>
+          <li class="relative flex flex-col justify-center text-center bg-white rounded-xl px-8 py-7 hover:shadow-lg hover:scale-105 duration-200">
+            <a href="https://do.novsu.ru/course/view.php?id=2807">
+              <span class="absolute top-2 left-4 text-gray-400 text-sm select-none">09.02.01</span>
+              <p>Операционные системы и среды</p>
+              <p class="text-sm text-gray-500">Компьютерные системы и комплексы</p>
+            </a>
+          </li>
+          <li class="relative flex flex-col justify-center text-center bg-white rounded-xl px-8 py-7 hover:shadow-lg hover:scale-105 duration-200">
             <span class="absolute top-2 left-4 text-gray-400 text-sm select-none">09.02.07</span>
-            <p>Основы разработки программного обеспечения, специальность</p>
-            <p class="text-sm text-gray-500">Информационные системы и программирование</p>
-          </li>
-          <li class="relative flex flex-col justify-center text-center bg-white rounded-xl px-8 py-7 hover:shadow-lg hover:scale-105 duration-200">
-            <span class="absolute top-2 left-4 text-gray-400 text-sm select-none">09.02.03</span>
-            <p>Технология разработки и защиты баз данных</p>
-            <p class="text-sm text-gray-500">Программирование в компьютерных системах</p>
-          </li>
-          <li class="relative flex flex-col justify-center text-center bg-white rounded-xl px-8 py-7 hover:shadow-lg hover:scale-105 duration-200">
-            <span class="absolute top-2 left-4 text-gray-400 text-sm select-none">09.02.01</span>
-            <p>Системы управления базами данных</p>
-            <p class="text-sm text-gray-500">Компьютерные системы и комплексы</p>
-          </li>
-          <li class="relative flex flex-col justify-center text-center bg-white rounded-xl px-8 py-7 hover:shadow-lg hover:scale-105 duration-200">
-            <span class="absolute top-2 left-4 text-gray-400 text-sm select-none">09.02.03</span>
-            <p>Операционные системы</p>
-            <p class="text-sm text-gray-500">Программирование в компьютерных системах</p>
-          </li>
-          <li class="relative flex flex-col justify-center text-center bg-white rounded-xl px-8 py-7 hover:shadow-lg hover:scale-105 duration-200">
-            <span class="absolute top-2 left-4 text-gray-400 text-sm select-none">09.02.01</span>
-            <p>Операционные системы и среды</p>
-            <p class="text-sm text-gray-500">Компьютерные системы и комплексы</p>
-          </li>
-          <li class="relative flex flex-col justify-center text-center bg-white rounded-xl px-8 py-7 hover:shadow-lg hover:scale-105 duration-200">
-            <span class="absolute top-2 left-4 text-gray-400 text-sm select-none">09.02.07</span>
-            <p>Операционные системы и среды</p>
-            <p class="text-sm text-gray-500">Информационные системы и программирование</p>
+            <a href="https://do.novsu.ru/course/view.php?id=4050">
+              <p>Операционные системы и среды</p>
+              <p class="text-sm text-gray-500">Информационные системы и программирование</p>
+            </a>
           </li>
         </ul>
       </div>
     </article>
 
-    <article class="max-w-screen-lg m-auto p-8">
+    <article class="max-w-screen-lg m-auto p-8 scroll-mt-16">
       <h2 class="text-2xl font-bold">Полезные ссылки</h2>
       <div class="my-1 h-1 w-16 bg-sky-500 rounded"></div>
       <nav class="mt-4 flex gap-x-8 gap-y-4 flex-wrap justify-center">
@@ -211,7 +230,7 @@
       </nav>
     </article>
 
-    <article id="links" class="bg-gray-100">
+    <article id="social-links" class="bg-gray-100 scroll-mt-16">
       <div class="max-w-screen-lg m-auto p-8">
         <h2 class="text-2xl font-bold">ССЫЛКИ</h2>
         <div class="my-1 h-1 w-16 bg-sky-500 rounded"></div>
@@ -254,7 +273,7 @@
       </div>
     </article>
 
-    <article id="files" class="max-w-screen-lg m-auto p-8">
+    <article id="files" class="max-w-screen-lg m-auto p-8 scroll-mt-16">
       <h2 class="text-2xl font-bold">ФАЙЛЫ</h2>
       <div class="my-1 h-1 w-16 bg-sky-500 rounded"></div>
       <nav class="mt-4 flex gap-x-8 gap-y-4 flex-wrap justify-center">
@@ -267,44 +286,40 @@
           Сертификат Венчурного Акселератора «Основы ИТ-предпринимательства»
         </a>
         <a class="text-sky-500 duration-100 border-b-2 border-transparent hover:border-sky-500"
-           href="assets/files/Анкета%20участника%20областного%20конкурса%20профессионального%20мастерства%20в%20номинации%20«Преподаватель%20года%20–%202022».pdf">
-          Анкета участника областного конкурса профессионального мастерства в номинации «Преподаватель года – 2022»
-        </a>
-        <a class="text-sky-500 duration-100 border-b-2 border-transparent hover:border-sky-500"
            href="assets/files/Coursera%20ULR78Q43EUYS.pdf">
           Основы программирования на Python
         </a>
       </nav>
     </article>
-    <article id="sertificates" class="bg-sky-600">
+    <article id="sertificates" class="bg-sky-600 scroll-mt-16">
       <div class="max-w-screen-lg m-auto p-8">
         <h2 class="text-2xl text-white font-bold">СЕРТИФИКАТЫ</h2>
         <div class="my-1 h-1 w-16 bg-white rounded"></div>
         <div class="glide glide-sertificates mt-4">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/sertificates/1.png">
                 <img class="max-h-96" src="assets/images/sertificates/1.png" alt="1">
               </li>
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/sertificates/2.png">
                 <img class="max-h-96" src="assets/images/sertificates/2.png" alt="2">
               </li>
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/sertificates/3.jpg">
                 <img class="max-h-96" src="assets/images/sertificates/3.jpg" alt="3">
               </li>
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/sertificates/4.jpg">
                 <img class="max-h-96" src="assets/images/sertificates/4.jpg" alt="4">
               </li>
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/sertificates/5.jpg">
                 <img class="max-h-96" src="assets/images/sertificates/5.jpg" alt="5">
               </li>
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/sertificates/6.jpg">
                 <img class="max-h-96" src="assets/images/sertificates/6.jpg" alt="6">
               </li>
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/sertificates/7.jpg">
                 <img class="max-h-96" src="assets/images/sertificates/7.jpg" alt="7">
               </li>
-              <li class="glide__slide flex justify-center">
+              <li class="glide__slide flex justify-center" data-fancybox data-src="assets/images/sertificates/8.jpg">
                 <img class="max-h-96" src="assets/images/sertificates/8.jpg" alt="8">
               </li>
             </ul>
